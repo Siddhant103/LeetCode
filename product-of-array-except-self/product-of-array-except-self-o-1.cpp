@@ -10,7 +10,6 @@ public:
          1  1  2  6   -  Before
          24 12 4  1   -  After        
         */
-        
         for(int i=1;i<n;i++){
             result[i] = result[i-1]*nums[i-1];
         }
