@@ -1,77 +1,68 @@
 class Solution {
 public:
-    
-    bool detectCycleUtil(map<int, vector<int>>& adj, vector<int>& visited, int v){
-        if(visited[v]==1)
+    bool detectCycleUtil(unordered_map<int, vector<int>>& adj, vector<int>& visited, int v){
+        if(visited[v] == 1){
             return true;
-        if(visited[v]==2)
+        }
+        if(visited[v] == 2){
             return false;
-        
-        visited[v]=1;
-        for(int i=0;i<adj[v].size();i++){
-            if(detectCycleUtil(adj, visited, adj[v][i]))
-                return true;
         }
         
-        visited[v]=2;
+        visited[v] = 1;
+        for(int i: adj[v]){
+            if(detectCycleUtil(adj, visited, i)){
+                return true;
+            }
+        }
+        visited[v] = 2;
         return false;
     }
     
-    bool detectCycle(map<int, vector<int>>& adj, int n){
-        vector<int> visited(n, 0);
+    bool detectCycle(unordered_map<int, vector<int>>& adj, int numCourses){
+        vector<int> visited(numCourses, 0);
         
-        for(int i=0;i<n;i++){
-            if(!visited[i]){
-                if(detectCycleUtil(adj, visited, i))
-                    return true;
+        for(int i=0;i<numCourses;i++){
+            if(visited[i] == 0 && detectCycleUtil(adj, visited, i)){
+                return true;
             }
         }
         
         return false;
     }
     
-    void dfs(map<int, vector<int>>& adj, vector<bool>& visited, int v, stack<int>& result){
+    void dfs(unordered_map<int, vector<int>>& adj, vector<int>& visited, int v, vector<int>& result){
         visited[v] = true;
+        
         for(int i=0;i<adj[v].size();i++){
-            if(!visited[adj[v][i]]){
+            if(visited[adj[v][i]] == 0){
                 dfs(adj, visited, adj[v][i], result);
             }
         }
-        result.push(v);
+        
+        result.push_back(v);
     }
     
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
+        unordered_map<int, vector<int>> adj;
         
-        map<int, vector<int>> adj;
-        vector<int> indegrees;
-        
-        //make adj list
-        for(vector<int> prerequisite: prerequisites){
-            adj[prerequisite[1]].push_back(prerequisite[0]);
+        for(vector<int> pre: prerequisites){
+            adj[pre[1]].push_back(pre[0]);
         }
-        //exit(0);
         
-        //detect cycle
         vector<int> result;
-        stack<int> s;
+        //detect cycle
         if(detectCycle(adj, numCourses)){
             return result;
         }
         
-        //topological sort start
-        vector<bool> visited(numCourses, false);
-        
+        vector<int> visited(numCourses);
         for(int i=0;i<numCourses;i++){
-            if(visited[i]==false){
-                dfs(adj, visited, i, s);
+            if(visited[i] == 0){
+                dfs(adj, visited, i, result);
             }
         }
         
-        while(!s.empty()){
-            result.push_back(s.top());
-            s.pop();
-        }
-        
+        reverse(result.begin(), result.end());
         return result;
     }
 };
