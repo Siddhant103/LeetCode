@@ -1,30 +1,30 @@
 class Solution {
+    //vector<vector<int>> dp(501, vector<int>(501, -1));
+    int dp[501][501];
 public:
     int minDistance(string word1, string word2) {
-        int row = word1.size();
-        int col = word2.size();
+        //dp.resize
+        memset(dp, -1, sizeof(dp));
+        int m = word1.size(), n = word2.size();
+        return editDistance(word1, word2, m, n);
+    }
+    
+    int editDistance(string word1, string word2, int m, int n){
+        if(m==0)
+            return n;
+        else if(n==0)
+            return m;
         
-        vector<vector<int>> dp(row+1, vector<int>(col+1,0));
-
-        dp[0][0] = 0;
-        for(int i=1;i<=row;i++){
-            dp[i][0] = dp[i-1][0] + 1;
+        if(dp[m][n] != -1){
+            return dp[m][n];
         }
-        //exit(0);
-        for(int i=1;i<=col;i++){
-            dp[0][i] = dp[0][i-1] + 1;
-        }
-        
-        //exit(0);
-        for(int i=1;i<=row;i++){
-            for(int j=1;j<=col;j++){
-                if(word1[i-1]!=word2[j-1])
-                    dp[i][j] = min(dp[i-1][j-1], min(dp[i-1][j], dp[i][j-1])) + 1;
-                else
-                    dp[i][j] = dp[i-1][j-1];
-            }
+        if(word1[m-1]==word2[n-1]){
+            dp[m][n] = editDistance(word1, word2, m-1, n-1);
+            return dp[m][n];
         }
         
-        return dp[row][col];
+        dp[m][n] = min(editDistance(word1, word2, m-1, n-1), min(editDistance(word1, word2, m-1, n), editDistance(word1, word2, m, n-1))) + 1;
+        
+        return dp[m][n];
     }
 };
