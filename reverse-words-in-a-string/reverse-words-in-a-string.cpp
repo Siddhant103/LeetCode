@@ -1,65 +1,47 @@
 class Solution {
 public:
-    
     string reverseWords(string s) {
-        reverse(s.begin(), s.end());
+        int index = 0;
+        int i = 0;
         
-        int j=0;
-        while(s[j]==' '){
-            j++;
+        while(s[i] == ' '){
+            i++;
         }
-        s = s.substr(j);
-        
-        j = s.size()-1;
-        while(s[j]==' ')
-            j--;
-        s = s.substr(0, j+1);
-        
-        int start = 0;
-        int i=0;
-        bool flag = false;
-        while(i<s.size()){
-            s[start]=s[i];
-            while(i<s.size() && s[i]==' '){
-                flag=true;
-                i++;
-            } 
-            start++;
-            if(flag==false)
-                i++;
-            flag=false;
+        s = s.substr(i);
+        i = s.size() - 1;
+        while(s[i] == ' '){
+            i--;
         }
+        s = s.substr(0, i + 1);
         
-        cout<<s.substr(0, start)<<endl;
-        s=s.substr(0, start);
-        start=0;
-        int end;
-        
-        cout<<s<<endl;
-        for(i=0;i<s.size();i++){
-            if(s[i]==' ' || i==s.size()-1){
-                //reverse start-(i-1)
-                end = (i==s.size()-1)?i: i-1;
-                while(start<end){
-                    char temp = s[start];
-                    s[start] = s[end];
-                    s[end] = temp;
-                    start++;
-                    end--;
-                }
-                start=i+1;
+        stringstream ss(s);
+        string word;
+        string result;
+        int left, right;
+        while(ss >> word){
+            string t = word;
+            left = 0, right = word.size() - 1;
+            while(left < right){
+                char temp = t[left];
+                t[left] = t[right];
+                t[right] = temp;
+                left++;
+                right--;
             }
+            result += t;
+            result += ' ';
         }
-        while(start<end){
-                    char temp = s[start];
-                    s[start] = s[end];
-                    s[end] = temp;
-                    start++;
-                    end--;
-                }
         
-        cout<<s;
+        result = result.substr(0, result.size() - 1);
+        left = 0, right = result.size() - 1;
+        while(left < right){
+            char temp = result[left];
+            result[left] = result[right];
+            result[right] = temp;
+            left++;
+            right--;
+        }
         
-        return s;
+        return result;
     }
 };
