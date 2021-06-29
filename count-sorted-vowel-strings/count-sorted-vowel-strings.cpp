@@ -1,28 +1,14 @@
 class Solution {
-    const vector<char> ch = {'a', 'e', 'i', 'o', 'u'};
 public:
     int countVowelStrings(int n) {
-        int ans = 0;
+        vector<vector<int>> dp(n + 1, vector(6, 0));
         
-        for(char c: ch){
-            ans += count(n - 1, c);
-        }
-        
-        return ans;
-    }
-    
-    int count(int length, char last_char){
-        if(length == 0){
-            return 1;
-        }
-        
-        int temp = 0;
-        for(char c: ch){
-            if(last_char >= c){
-                temp += count(length - 1, c);
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<6;j++){
+                dp[i][j] = ((i > 1) ? dp[i-1][j] : 1) + dp[i][j-1];
             }
         }
         
-        return temp;
+        return dp[n][5];
     }
 };
