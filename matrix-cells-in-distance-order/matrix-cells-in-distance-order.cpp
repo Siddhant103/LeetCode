@@ -2,21 +2,27 @@ class Solution {
 public:
     vector<vector<int>> allCellsDistOrder(int rows, int cols, int rCenter, int cCenter) {
         
-        auto comp = [rCenter, cCenter](vector<int>& a, vector<int>& b){
-            return abs(a[0]-rCenter) + abs(abs(a[1])-cCenter) > abs(b[0]-rCenter) + abs(abs(b[1])-cCenter);
-        };
-        
-        priority_queue<vector<int>, vector<vector<int>>, decltype(comp)> pq(comp);
-        for(int i=0;i<rows;i++){
-            for(int j=0;j<cols;j++){
-                pq.push({i, j});
-            }
-        }
-        
         vector<vector<int>> ans;
-        while(pq.size()){
-            ans.push_back(pq.top());
-            pq.pop();
+        queue<pair<int, int>> q;
+        q.push({rCenter, cCenter});
+        vector<vector<int>> dirs{{0,1}, {1, 0}, {0, -1}, {-1, 0}};
+        bool visited[102][102] = {0};
+        visited[rCenter][cCenter] = true;
+        
+        while(q.size()){
+            int qsize = q.size();
+            while(qsize--){
+                pair<int, int> temp = q.front(); q.pop();
+                ans.push_back({temp.first, temp.second});
+                for(int i=0;i<4;i++){
+                    int new_row = temp.first + dirs[i][0];
+                    int new_col = temp.second + dirs[i][1];
+                    if(new_row >= 0 && new_col >= 0 && new_row < rows && new_col < cols && visited[new_row][new_col] == 0){
+                        q.push({new_row, new_col});
+                        visited[new_row][new_col] = true;
+                    }
+                }
+            }
         }
         
         return ans;
