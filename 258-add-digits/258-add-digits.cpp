@@ -1,8 +1,11 @@
 class Solution {
 public:
     int addDigits(int num) {
-       int singledigit = (num-1) % 9 +1 ;
-        
-        return singledigit;
+       if(num==0)
+          return 0;
+      else if(num%9==0)
+          return 9;
+      else
+          return num%9;
     }
 };
