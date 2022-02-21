@@ -1,15 +1,22 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        map<int,int> countMap;
-        int majCount = nums.size()/2 +1;
-        for(int number : nums){
-            countMap[number]++;
+        int majElement = nums[0];
+        int majCount = 1;
+        
+        for(int i=1;i<nums.size();i++){
+            if(nums[i] == majElement){
+                majCount++;
+            } else{
+                majCount--;
+            }
+            
+            if(majCount==0){
+                majElement=nums[i];
+                majCount=1;
+            }
         }
-        for(auto a: countMap){
-            if(a.second >=majCount)
-                return a.first;
-        }
-        return 0;
+        
+        return majElement;
     }
 };
