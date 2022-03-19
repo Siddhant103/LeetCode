@@ -2,7 +2,7 @@ class FreqStack {
     unordered_map<int, int> m;
     vector<vector<int>> v;
 public:
-    FreqStack() { };
+    FreqStack() { }
     
     void push(int x) {
         m[x]++;
