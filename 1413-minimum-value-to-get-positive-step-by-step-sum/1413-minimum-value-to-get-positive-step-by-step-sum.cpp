@@ -1,14 +1,11 @@
 class Solution {
 public:
     int minStartValue(vector<int>& nums) {
-        int sum = 1, ans = 1;
+        int sum = 0, minSum = 0;
         for (int num: nums) {
             sum += num;
-            if (sum < 1) {
-                ans += abs(sum) + 1;
-                sum = 1;
-            }
+            minSum = min(sum, minSum);
         }
-        return ans;
+        return -minSum + 1;
     }
 };
