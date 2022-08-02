@@ -21,12 +21,12 @@ var isValid = function(s) {
                 res = false;
                 return;
             }
-            if(char === "]" && temp !== "[")
+            else if(char === "]" && temp !== "[")
             {
                 res = false;
                 return;
             }
-            if(char === "}" && temp !== "{")
+            else if(char === "}" && temp !== "{")
             {
                 res = false;
                 return;
