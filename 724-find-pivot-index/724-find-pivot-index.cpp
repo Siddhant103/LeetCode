@@ -11,7 +11,6 @@ public:
             if (leftSum * 2 == sum - nums[i]) {
                 return i;
             }
-            cout << leftSum << "  " << sum << endl;
             leftSum += nums[i];
         }
         
