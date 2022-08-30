@@ -10,44 +10,41 @@
  */
 class Solution {
 public:
-    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {        
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        ListNode *head, *temp;
+        if (!list1 && !list2) {
+            return NULL;
+        }
         if (!list1) {
+            cout << "l1";
             return list2;
         }
-        
         if (!list2) {
+            cout << "l2";
             return list1;
         }
-        
-        ListNode *head, *temp;
         if (list1->val < list2->val) {
             head = list1;
-            temp = head;
+            temp = list1;
             list1 = list1->next;
         } else {
             head = list2;
-            temp = head;
+            temp = list2;
             list2 = list2->next;
         }
-        
-        while (list1 != NULL && list2 != NULL) {
+        while (list1 && list2) {
             if (list1->val < list2->val) {
                 temp->next = list1;
-                temp = temp->next;
                 list1 = list1->next;
             } else {
                 temp->next = list2;
-                temp = temp->next;
                 list2 = list2->next;
             }
+            
+            temp = temp->next;
         }
         
-        if (list1) {
-            temp->next = list1;
-        } else {
-            temp->next = list2;
-        }
-        
+        temp->next = list1 ? list1 : list2;
         return head;
     }
 };
