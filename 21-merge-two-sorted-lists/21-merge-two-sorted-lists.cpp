@@ -16,11 +16,9 @@ public:
             return NULL;
         }
         if (!list1) {
-            cout << "l1";
             return list2;
         }
         if (!list2) {
-            cout << "l2";
             return list1;
         }
         if (list1->val < list2->val) {
