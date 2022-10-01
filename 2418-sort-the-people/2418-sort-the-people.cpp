@@ -7,12 +7,11 @@ public:
         }
         
         int size = names.size();
-        vector<string> ans(size);
         
         for (auto it=m.begin();it!=m.end();it++) {
-            ans[--size] = it->second;
+            names[--size] = it->second;
         }
         
-        return ans;
+        return names;
     }
 };
