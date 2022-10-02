@@ -1,23 +1,13 @@
 class Solution {
 public:
     bool areOccurrencesEqual(string s) {
-        vector<int> c(156, 0);
-        int threshold = 0;
-        
-        for (char ch: s) {
-            c[ch]++;
-            threshold = (threshold > c[ch]) ? threshold : c[ch];
-        }
-        
-        for (int i=97;i<=122;i++) {
-            if (!c[i]) {
-                continue;
-            }
-            if (c[i] != threshold) {
+   map<char,int> mp;
+        for(int i=0;i<s.size();i++)mp[s[i]]++;
+        int cnt= mp[s[0]];
+        for(auto it : mp){
+            if(cnt!=it.second)
                 return false;
-            }
         }
-        
         return true;
     }
 };
