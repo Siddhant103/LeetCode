@@ -33,7 +33,6 @@ public:
             temp = curr;
             l1 = l1 ? l1->next: NULL;
             l2 = l2 ? l2->next: NULL;
-            cout << head->val << temp->val << endl;
         }
         
         if (carry) {
