@@ -13,7 +13,6 @@ public:
         } else{
             min_heap.push(num);
         }
-        cout << "Pushing done for " << num << endl;
         if(max_heap.size() > (min_heap.size()+1))
         {
             min_heap.push(max_heap.top());
@@ -24,11 +23,9 @@ public:
             max_heap.push(min_heap.top());
             min_heap.pop();
         }
-        cout << "Balance done" << endl;
     }
     
     double findMedian() {
-        cout << "In findMedian" << endl;
         if(max_heap.size() > min_heap.size()){
             return max_heap.top();
         } else if(max_heap.size() < min_heap.size()){
