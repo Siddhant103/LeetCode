@@ -1,46 +1,32 @@
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
+        int n = matrix.size(), m = matrix[0].size();
+        int top = 0, bottom = n - 1, left = 0, right = m - 1;
         vector<int> ans;
         
-        if(matrix.size()==0)
-            return ans;
-        
-        int rowBegin = 0;
-        int rowEnd = matrix.size()-1;
-        int colBegin = 0;
-        int colEnd = matrix[0].size()-1;
-        
-        cout<<rowEnd<<endl;
-        cout<<colEnd<<endl;
-        //exit(0);
-        
-        while(rowBegin <=rowEnd && colBegin <= colEnd){
-            cout<<rowBegin<<endl;
-            cout<<colBegin<<endl;
-            for(int i=colBegin;i<=colEnd;i++){
-                ans.push_back(matrix[rowBegin][i]);
+        while (top <= bottom && left <= right) {
+            for (int i=left;i<=right;i++) {
+                ans.push_back(matrix[top][i]);
             }
-            rowBegin++;
-            //continue;
-            for(int i=rowBegin;i<=rowEnd;i++){
-                ans.push_back(matrix[i][colEnd]);
+            top++;
+            for (int i=top;i<=bottom;i++) {
+                ans.push_back(matrix[i][right]);
             }
-            colEnd--;
-            if(rowBegin<=rowEnd){
-                for(int i=colEnd;i>=colBegin;i--)
-                    ans.push_back(matrix[rowEnd][i]);
-            }
-            rowEnd--;
-            
-            if(colBegin<=colEnd){
-                for(int i=rowEnd;i>=rowBegin;i--){
-                    ans.push_back(matrix[i][colBegin]);
+            right--;
+            if (top <= bottom) {
+                for (int i=right;i>=left;i--) {
+                    ans.push_back(matrix[bottom][i]);
                 }
+                bottom--;    
             }
-            colBegin++;
+            if (left <= right) {
+                for (int i=bottom;i>=top;i--) {
+                    ans.push_back(matrix[i][left]);
+                }
+                left++;       
+            }
         }
-        
         return ans;
     }
 };
