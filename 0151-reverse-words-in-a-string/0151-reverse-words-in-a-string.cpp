@@ -7,6 +7,7 @@ public:
         while(s[i] == ' '){
             i++;
         }
+        
         s = s.substr(i);
         i = s.size() - 1;
         while(s[i] == ' '){
