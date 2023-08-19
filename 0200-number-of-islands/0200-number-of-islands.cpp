@@ -1,30 +1,33 @@
 class Solution {
 public:
+    void sink(vector<vector<char>>& arr, int i, int j, int n, int m) {
+    if (i < 0 || j < 0 || i >= n || j >= m || arr[i][j] == '0') {
+        return;
+    }
+
+    arr[i][j] = '0';
+    sink(arr, i + 1, j, n, m); //bottom
+    sink(arr, i, j + 1, n, m); //right
+    sink(arr, i, j - 1, n, m); //left
+    sink(arr, i - 1, j, n, m); //top
+    // sink(arr, i + 1, j + 1, n, m);
+    // sink(arr, i - 1, j + 1, n, m);
+    // sink(arr, i + 1, j - 1, n, m);
+    // sink(arr, i + 1, j - 1, n, m);
+    }
     int numIslands(vector<vector<char>>& grid) {
-        int n = grid.size();
-        int m = grid[0].size();
-        int islands = 0;
+        int count = 0;
+        int n = grid.size(), m = grid[0].size();
+
         for (int i=0;i<n;i++) {
             for (int j=0;j<m;j++) {
                 if (grid[i][j] == '1') {
-                    islands++;
-                    sinkIsland(grid, i, j, n, m);
+                    count++;
+                    sink(grid, i, j, n, m);
                 }
             }
         }
-        
-        return islands;
-    }
-    
-    void sinkIsland(vector<vector<char>> &grid, int i, int j, int n, int m) {
-        if (i < 0 || j < 0 || i >= n || j >= m || grid[i][j] == '0') {
-            return;
-        }
-        
-        grid[i][j] = '0';
-        sinkIsland(grid, i + 1, j, n, m);
-        sinkIsland(grid, i, j + 1, n, m);
-        sinkIsland(grid, i - 1, j, n, m);
-        sinkIsland(grid, i, j - 1, n, m);
+
+        return count;
     }
 };
