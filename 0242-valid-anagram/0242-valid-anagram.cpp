@@ -1,19 +1,22 @@
 class Solution {
 public:
     bool isAnagram(string s, string t) {
-        if(s.length() != t.length())
-            return false;
+        vector<int> charLen(27, 0);
         
-        int count[123]={0};
-        for(int i=0;i<s.length();i++){
-            count[s[i]]++;
+        for (char c: s) {
+            charLen[c - 'a']++;
         }
-        for(int i=0;i<t.length();i++){
-            if(count[t[i]]==0)
+        
+        for (char c: t) {
+            charLen[c - 'a']--;
+        }
+        
+        for (int i=0;i<27;i++) {
+            if (charLen[i] != 0) {
                 return false;
-            else
-                count[t[i]]--;
+            }
         }
+        
         return true;
     }
 };
