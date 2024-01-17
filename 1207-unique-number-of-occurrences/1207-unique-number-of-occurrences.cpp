@@ -1,18 +1,18 @@
 class Solution {
 public:
     bool uniqueOccurrences(vector<int>& arr) {
-        unordered_map<int, int> count;
+        unordered_map<int, int> m;
+        unordered_set<int> s;
         
-        for(int a: arr){
-            count[a]++;
+        for (int num: arr) {
+            m[num]++;
         }
         
-        unordered_set<int> s;
-        for(auto it: count){
-            if(s.find(it.second) != s.end()){
+        for (auto item: m) {
+            if (s.find(item.second) != s.end()) {
                 return false;
             }
-            s.insert(it.second);
+            s.insert(item.second);
         }
         
         return true;
