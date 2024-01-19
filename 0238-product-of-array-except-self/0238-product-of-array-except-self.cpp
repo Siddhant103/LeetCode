@@ -9,20 +9,11 @@ public:
             result[i] = result[i - 1] * nums[i - 1];
         }
         
-        for (int r: result) {
-            cout << r << " ";
-        }
-        cout << endl;
-        
         int R = 1;
         for (int i=n-1;i>=0;i--) {
             result[i] = result[i] * R;
             R = R * nums[i];
         }
-        for (int r: result) {
-            cout << r << " ";
-        }
-        cout << endl;
         
         return result;
     }
