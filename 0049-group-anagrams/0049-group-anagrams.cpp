@@ -10,7 +10,6 @@ public:
             hash += ('a' + i);
             hash += to_string(freq[i]);
         }
-        cout << hash << " ";
         return hash;
     }
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
