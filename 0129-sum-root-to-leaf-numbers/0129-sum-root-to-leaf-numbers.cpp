@@ -23,7 +23,6 @@ public:
         }
         
         currSum = currSum * 10 + root->val;
-        cout << "Current Sum = " << currSum << endl;
         if(root->left == NULL && root->right == NULL){
             sum += currSum;
             return;
