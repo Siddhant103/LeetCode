@@ -1,8 +1,7 @@
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
-        int i = 0, j = 0, n = nums.size();
-        int k = n - 1;
+        int i = 0, j = 0, k = nums.size() - 1;
         
         while (j <= k) {
             if (nums[j] == 2) {
@@ -15,11 +14,6 @@ public:
                 i++;
                 j++;
             }
-            cout << i << " " << j << " " << k << endl;
-            for (int num: nums) {
-                cout << num << " ";
-            }
-            cout << endl;
         }
     }
 };
