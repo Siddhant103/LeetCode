@@ -6,13 +6,27 @@ https://leetcode.com/siddhantpatel103/
 ## Breadth-First Search
 |  |
 | ------- |
+| [0854-making-a-large-island](https://github.com/Siddhant103/LeetCode/tree/master/0854-making-a-large-island) |
 | [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/Siddhant103/LeetCode/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
 ## Union Find
 |  |
 | ------- |
+| [0854-making-a-large-island](https://github.com/Siddhant103/LeetCode/tree/master/0854-making-a-large-island) |
 | [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/Siddhant103/LeetCode/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
 ## Graph
 |  |
 | ------- |
 | [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/Siddhant103/LeetCode/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
+## Array
+|  |
+| ------- |
+| [0854-making-a-large-island](https://github.com/Siddhant103/LeetCode/tree/master/0854-making-a-large-island) |
+## Depth-First Search
+|  |
+| ------- |
+| [0854-making-a-large-island](https://github.com/Siddhant103/LeetCode/tree/master/0854-making-a-large-island) |
+## Matrix
+|  |
+| ------- |
+| [0854-making-a-large-island](https://github.com/Siddhant103/LeetCode/tree/master/0854-making-a-large-island) |
 <!---LeetCode Topics End-->
