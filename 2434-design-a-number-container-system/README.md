@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/design-a-number-container-system">2434. Design a Number Container System</a></h2><h3>Medium</h3><hr><p>Design a number container system that can do the following:</p>
+<h2><a href="https://leetcode.com/problems/design-a-number-container-system">Design a Number Container System</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>Design a number container system that can do the following:</p>
 
 <ul>
 	<li><strong>Insert </strong>or <strong>Replace</strong> a number at the given index in the system.</li>
