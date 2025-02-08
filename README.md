@@ -30,4 +30,20 @@ https://leetcode.com/siddhantpatel103/
 |  |
 | ------- |
 | [0854-making-a-large-island](https://github.com/Siddhant103/LeetCode/tree/master/0854-making-a-large-island) |
+## Hash Table
+|  |
+| ------- |
+| [2434-design-a-number-container-system](https://github.com/Siddhant103/LeetCode/tree/master/2434-design-a-number-container-system) |
+## Design
+|  |
+| ------- |
+| [2434-design-a-number-container-system](https://github.com/Siddhant103/LeetCode/tree/master/2434-design-a-number-container-system) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [2434-design-a-number-container-system](https://github.com/Siddhant103/LeetCode/tree/master/2434-design-a-number-container-system) |
+## Ordered Set
+|  |
+| ------- |
+| [2434-design-a-number-container-system](https://github.com/Siddhant103/LeetCode/tree/master/2434-design-a-number-container-system) |
 <!---LeetCode Topics End-->
