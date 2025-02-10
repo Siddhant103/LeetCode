@@ -26,6 +26,7 @@ https://leetcode.com/siddhantpatel103/
 |  |
 | ------- |
 | [0854-making-a-large-island](https://github.com/Siddhant103/LeetCode/tree/master/0854-making-a-large-island) |
+| [0975-range-sum-of-bst](https://github.com/Siddhant103/LeetCode/tree/master/0975-range-sum-of-bst) |
 ## Matrix
 |  |
 | ------- |
@@ -46,4 +47,16 @@ https://leetcode.com/siddhantpatel103/
 |  |
 | ------- |
 | [2434-design-a-number-container-system](https://github.com/Siddhant103/LeetCode/tree/master/2434-design-a-number-container-system) |
+## Tree
+|  |
+| ------- |
+| [0975-range-sum-of-bst](https://github.com/Siddhant103/LeetCode/tree/master/0975-range-sum-of-bst) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0975-range-sum-of-bst](https://github.com/Siddhant103/LeetCode/tree/master/0975-range-sum-of-bst) |
+## Binary Tree
+|  |
+| ------- |
+| [0975-range-sum-of-bst](https://github.com/Siddhant103/LeetCode/tree/master/0975-range-sum-of-bst) |
 <!---LeetCode Topics End-->
