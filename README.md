@@ -21,6 +21,7 @@ https://leetcode.com/siddhantpatel103/
 |  |
 | ------- |
 | [0854-making-a-large-island](https://github.com/Siddhant103/LeetCode/tree/master/0854-making-a-large-island) |
+| [1477-product-of-the-last-k-numbers](https://github.com/Siddhant103/LeetCode/tree/master/1477-product-of-the-last-k-numbers) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/Siddhant103/LeetCode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 | [3429-special-array-i](https://github.com/Siddhant103/LeetCode/tree/master/3429-special-array-i) |
 ## Depth-First Search
@@ -39,6 +40,7 @@ https://leetcode.com/siddhantpatel103/
 ## Design
 |  |
 | ------- |
+| [1477-product-of-the-last-k-numbers](https://github.com/Siddhant103/LeetCode/tree/master/1477-product-of-the-last-k-numbers) |
 | [2434-design-a-number-container-system](https://github.com/Siddhant103/LeetCode/tree/master/2434-design-a-number-container-system) |
 ## Heap (Priority Queue)
 |  |
@@ -65,4 +67,16 @@ https://leetcode.com/siddhantpatel103/
 |  |
 | ------- |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/Siddhant103/LeetCode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
+## Math
+|  |
+| ------- |
+| [1477-product-of-the-last-k-numbers](https://github.com/Siddhant103/LeetCode/tree/master/1477-product-of-the-last-k-numbers) |
+## Data Stream
+|  |
+| ------- |
+| [1477-product-of-the-last-k-numbers](https://github.com/Siddhant103/LeetCode/tree/master/1477-product-of-the-last-k-numbers) |
+## Prefix Sum
+|  |
+| ------- |
+| [1477-product-of-the-last-k-numbers](https://github.com/Siddhant103/LeetCode/tree/master/1477-product-of-the-last-k-numbers) |
 <!---LeetCode Topics End-->
