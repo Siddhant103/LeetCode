@@ -71,6 +71,7 @@ https://leetcode.com/siddhantpatel103/
 |  |
 | ------- |
 | [1477-product-of-the-last-k-numbers](https://github.com/Siddhant103/LeetCode/tree/master/1477-product-of-the-last-k-numbers) |
+| [2802-find-the-punishment-number-of-an-integer](https://github.com/Siddhant103/LeetCode/tree/master/2802-find-the-punishment-number-of-an-integer) |
 ## Data Stream
 |  |
 | ------- |
@@ -79,4 +80,8 @@ https://leetcode.com/siddhantpatel103/
 |  |
 | ------- |
 | [1477-product-of-the-last-k-numbers](https://github.com/Siddhant103/LeetCode/tree/master/1477-product-of-the-last-k-numbers) |
+## Backtracking
+|  |
+| ------- |
+| [2802-find-the-punishment-number-of-an-integer](https://github.com/Siddhant103/LeetCode/tree/master/2802-find-the-punishment-number-of-an-integer) |
 <!---LeetCode Topics End-->
