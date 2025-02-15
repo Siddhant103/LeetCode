@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-the-punishment-number-of-an-integer">2802. Find the Punishment Number of an Integer</a></h2><h3>Medium</h3><hr><p>Given a positive integer <code>n</code>, return <em>the <strong>punishment number</strong></em> of <code>n</code>.</p>
+<h2><a href="https://leetcode.com/problems/find-the-punishment-number-of-an-integer">Find the Punishment Number of an Integer</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>Given a positive integer <code>n</code>, return <em>the <strong>punishment number</strong></em> of <code>n</code>.</p>
 
 <p>The <strong>punishment number</strong> of <code>n</code> is defined as the sum of the squares of all integers <code>i</code> such that:</p>
 
