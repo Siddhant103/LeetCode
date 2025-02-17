@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/letter-tile-possibilities">1160. Letter Tile Possibilities</a></h2><h3>Medium</h3><hr><p>You have <code>n</code>&nbsp;&nbsp;<code>tiles</code>, where each tile has one letter <code>tiles[i]</code> printed on it.</p>
+<h2><a href="https://leetcode.com/problems/letter-tile-possibilities">Letter Tile Possibilities</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>You have <code>n</code>&nbsp;&nbsp;<code>tiles</code>, where each tile has one letter <code>tiles[i]</code> printed on it.</p>
 
 <p>Return <em>the number of possible non-empty sequences of letters</em> you can make using the letters printed on those <code>tiles</code>.</p>
 
