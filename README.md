@@ -83,5 +83,10 @@ https://leetcode.com/siddhantpatel103/
 ## Backtracking
 |  |
 | ------- |
+| [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/Siddhant103/LeetCode/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/Siddhant103/LeetCode/tree/master/2802-find-the-punishment-number-of-an-integer) |
+## String
+|  |
+| ------- |
+| [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/Siddhant103/LeetCode/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 <!---LeetCode Topics End-->
