@@ -88,5 +88,10 @@ https://leetcode.com/siddhantpatel103/
 ## String
 |  |
 | ------- |
+| [1170-shortest-common-supersequence](https://github.com/Siddhant103/LeetCode/tree/master/1170-shortest-common-supersequence) |
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/Siddhant103/LeetCode/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
+## Dynamic Programming
+|  |
+| ------- |
+| [1170-shortest-common-supersequence](https://github.com/Siddhant103/LeetCode/tree/master/1170-shortest-common-supersequence) |
 <!---LeetCode Topics End-->
