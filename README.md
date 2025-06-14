@@ -11,6 +11,7 @@ https://leetcode.com/siddhantpatel103/
 ## Union Find
 |  |
 | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/Siddhant103/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0854-making-a-large-island](https://github.com/Siddhant103/LeetCode/tree/master/0854-making-a-large-island) |
 | [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/Siddhant103/LeetCode/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
 ## Graph
@@ -20,6 +21,7 @@ https://leetcode.com/siddhantpatel103/
 ## Array
 |  |
 | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/Siddhant103/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0854-making-a-large-island](https://github.com/Siddhant103/LeetCode/tree/master/0854-making-a-large-island) |
 | [1477-product-of-the-last-k-numbers](https://github.com/Siddhant103/LeetCode/tree/master/1477-product-of-the-last-k-numbers) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/Siddhant103/LeetCode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
@@ -36,6 +38,7 @@ https://leetcode.com/siddhantpatel103/
 ## Hash Table
 |  |
 | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/Siddhant103/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [2434-design-a-number-container-system](https://github.com/Siddhant103/LeetCode/tree/master/2434-design-a-number-container-system) |
 ## Design
 |  |
